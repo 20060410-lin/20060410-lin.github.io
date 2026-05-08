@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>共产党宣言 - 官网</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-title">共产党宣言</h1>
+            <ul class="nav-links">
+                <li><a href="#preface" class="nav-link active">前言·国际歌</a></li>
+                <li><a href="#overview" class="nav-link">基本概况</a></li>
+                <li><a href="#background" class="nav-link">创作背景</a></li>
+                <li><a href="#core" class="nav-link">核心内容</a></li>
+                <li><a href="#significance" class="nav-link">历史意义</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 前言：国际歌 -->
+        <section id="preface" class="section active">
+            <div class="container">
+                <h2 class="section-title">前言·国际歌</h2>
+                
+                <div class="preface-content">
+                    <div class="intro-text">
+                        <p class="lead">
+                            《国际歌》（法语：L'Internationale）是国际共产主义运动中最著名的一首歌，也是世界上最被广泛传唱的歌曲之一。这首歌热情讴歌了巴黎公社战士崇高的共产主义理想和英勇不屈的革命气概，向敌人宣告：共产主义一定要实现！
+                        </p>
+                    </div>
+                    
+                    <div class="card international-card">
+                        <h3>国际歌</h3>
+                        <p class="card-desc">由皮埃尔·狄盖特于1888年作曲，原文（法语）的歌词由欧仁·鲍狄埃在1871年巴黎公社运动失败后所作。这首歌被翻译成世界上许多种语言，成为全世界无产阶级的战歌。</p>
+                        
+                        <div class="audio-player">
+                            <button id="audio-btn" class="audio-btn">
+                                <span class="play-icon">▶</span>
+                                <span class="pause-icon">⏸</span>
+                                播放国际歌
+                            </button>
+                            <audio id="international-audio" src="international.mp3" preload="metadata"></audio>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="time-display">
+                                <span class="current-time">0:00</span>
+                                <span class="duration">0:00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="lyrics full-lyrics">
+                            <h4>完整歌词</h4>
+                            <div class="lyrics-section">
+                                <h5>第一段</h5>
+                                <p>起来，饥寒交迫的奴隶！</p>
+                                <p>起来，全世界受苦的人！</p>
+                                <p>满腔的热血已经沸腾，</p>
+                                <p>要为真理而斗争！</p>
+                                <p>旧世界打个落花流水，</p>
+                                <p>奴隶们起来，起来！</p>
+                                <p>不要说我们一无所有，</p>
+                                <p>我们要做天下的主人！</p>
+                            </div>
+                            
+                            <div class="lyrics-section">
+                                <h5>副歌</h5>
+                                <p class="chorus">这是最后的斗争，团结起来到明天，</p>
+                                <p class="chorus">英特纳雄耐尔就一定要实现！</p>
+                                <p class="chorus">这是最后的斗争，团结起来到明天，</p>
+                                <p class="chorus">英特纳雄耐尔就一定要实现！</p>
+                            </div>
+                            
+                            <div class="lyrics-section">
+                                <h5>第二段</h5>
+                                <p>从来就没有什么救世主，</p>
+                                <p>也不靠神仙皇帝！</p>
+                                <p>要创造人类的幸福，</p>
+                                <p>全靠我们自己！</p>
+                                <p>我们要夺回劳动果实，</p>
+                                <p>让思想冲破牢笼！</p>
+                                <p>快把那炉火烧得通红，</p>
+                                <p>趁热打铁才能成功！</p>
+                            </div>
+                            
+                            <div class="lyrics-section">
+                                <h5>第三段</h5>
+                                <p>是谁创造了人类世界？</p>
+                                <p>是我们劳动群众！</p>
+                                <p>一切归劳动者所有，</p>
+                                <p>哪能容得寄生虫？</p>
+                                <p>最可恨那些毒蛇猛兽，</p>
+                                <p>吃尽了我们的血肉！</p>
+                                <p>一旦把它们消灭干净，</p>
+                                <p>鲜红的太阳照遍全球！</p>
+                            </div>
+                        </div>
+                        
+                        <div class="author-info">
+                            <h4>词作者：欧仁·鲍狄埃</h4>
+                            <p>欧仁·鲍狄埃（Eugène Pottier，1816年10月4日－1887年11月6日）是法国的革命家，巴黎公社的主要领导人之一，《国际歌》的词作者。他出生于巴黎一个工人家庭，13岁当学徒，后来又当绘制印花布图样的技工，一生贫苦。1871年巴黎公社成立后，鲍狄埃被选为公社委员，参与公社的决策。公社失败后，他流亡国外，在流亡期间写下了气壮山河的《国际歌》歌词。1887年，鲍狄埃在巴黎逝世，葬于拉雪兹神父公墓。</p>
+                        </div>
+                        
+                        <div class="composer-info">
+                            <h4>曲作者：皮埃尔·狄盖特</h4>
+                            <p>皮埃尔·狄盖特（Pierre De Geyter，1848年10月8日－1932年9月26日）是比利时裔法国作曲家，国际歌的曲作者。他出生于比利时根特，后移居法国里尔。1888年，工人作曲家狄盖特为这首歌词谱曲，从此《国际歌》传遍全世界，成为无产阶级的革命战歌。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 基本概况 -->
+        <section id="overview" class="section">
+            <div class="container">
+                <h2 class="section-title">基本概况</h2>
+                
+                <div class="overview-content">
+                    <div class="intro-box">
+                        <h3>《共产党宣言》简介</h3>
+                        <p class="lead">
+                            《共产党宣言》（德语：Manifest der Kommunistischen Partei）是卡尔·马克思和弗里德里希·恩格斯为共产主义者同盟起草的纲领，是马克思主义诞生的重要标志。1848年2月21日在伦敦第一次以单行本问世，2月24日《共产党宣言》正式出版。
+                        </p>
+                    </div>
+                    
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h4>基本信息</h4>
+                            <ul>
+                                <li><strong>原名：</strong>Manifest der Kommunistischen Partei</li>
+                                <li><strong>作者：</strong>卡尔·马克思、弗里德里希·恩格斯</li>
+                                <li><strong>出版时间：</strong>1848年2月</li>
+                                <li><strong>出版地点：</strong>英国伦敦</li>
+                                <li><strong>语言：</strong>德文（原版）</li>
+                                <li><strong>篇幅：</strong>约2.5万字</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h4>历史地位</h4>
+                            <ul>
+                                <li>马克思主义诞生的重要标志</li>
+                                <li>国际共产主义运动的第一个纲领性文件</li>
+                                <li>科学社会主义的奠基之作</li>
+                                <li>被翻译成200多种语言</li>
+                                <li>全球发行量最大的政治文献之一</li>
+                                <li>对人类历史进程产生深远影响</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="content-intro">
+                        <h3>主要内容概述</h3>
+                        <p>《共产党宣言》运用历史唯物主义观点，分析了阶级斗争在社会历史发展中的作用，揭示了资本主义必然被社会主义代替的客观规律，阐明了无产阶级的历史使命，号召全世界无产者联合起来，为获得自己的解放而斗争。</p>
+                        <p>宣言由引言和四章正文组成，系统阐述了马克思主义的基本原理，包括唯物史观、阶级斗争理论、剩余价值学说和科学社会主义理论，为无产阶级革命提供了强大的思想武器。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 创作背景 -->
+        <section id="background" class="section">
+            <div class="container">
+                <h2 class="section-title">创作背景</h2>
+                
+                <div class="background-content">
+                    <div class="era-background">
+                        <h3>时代背景</h3>
+                        <p class="lead">
+                            19世纪40年代，资本主义在欧洲迅速发展，工业革命带来了生产力的巨大飞跃，但同时也加剧了社会矛盾。无产阶级与资产阶级的对立日益尖锐，工人运动此起彼伏。1831年和1834年法国里昂工人起义、1836-1848年英国宪章运动、1844年德国西里西亚纺织工人起义，标志着无产阶级已经作为独立的政治力量登上历史舞台。
+                        </p>
+                        <p>
+                            然而，这些早期的工人运动缺乏科学理论的指导，迫切需要一种能够揭示社会发展规律、指明无产阶级解放道路的科学理论。马克思和恩格斯正是在这样的历史条件下，创立了马克思主义，为无产阶级革命提供了科学的理论武器。
+                        </p>
+                    </div>
+                    
+                    <div class="cafe-section">
+                        <h3>诞生地：天鹅咖啡馆</h3>
+                        <div class="cafe-content">
+                            <img src="2ca4364038ab049b65413e5007b5929b.jpg" alt="天鹅咖啡馆" class="cafe-img">
+                            <div class="cafe-text">
+                                <p>天鹅咖啡馆（La Maison du Cygne）位于比利时布鲁塞尔市中心大广场（Grand Place）附近，是一座具有悠久历史的建筑。咖啡馆因建筑外墙上的天鹅雕塑而得名，这座雕塑至今仍然镶嵌在建筑正面，成为布鲁塞尔著名的地标之一。</p>
+                                <p>1845年至1848年间，马克思和恩格斯流亡布鲁塞尔期间，常在这里聚会，讨论革命理论，撰写重要著作。《共产党宣言》的初稿就是在这里完成的，因此天鹅咖啡馆被誉为马克思主义的诞生地之一。</p>
+                                <p>咖啡馆内部装饰典雅，保留着19世纪欧洲咖啡馆的古典风格。如今，这里不仅是游客参观的热门景点，也是纪念马克思主义诞生、缅怀革命先驱的重要场所。许多来自世界各地的马克思主义研究者和追随者都会来到这里，感受当年马克思和恩格斯创作《共产党宣言》的历史氛围。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="authors-background">
+                        <h3>作者介绍</h3>
+                        <div class="author-cards">
+                            <div class="author-card">
+                                <h4>卡尔·马克思</h4>
+                                <p>卡尔·马克思（Karl Marx，1818年5月5日－1883年3月14日），德国哲学家、经济学家、社会学家、历史学家、革命理论家。马克思主义的创始人之一，第一国际的组织者和领导者，全世界无产阶级和劳动人民的伟大导师。</p>
+                                <p>马克思出生于德国特里尔的一个犹太律师家庭，先后在波恩大学和柏林大学学习法律、历史和哲学。1842年开始从事新闻工作，1843年迁居巴黎，1845年流亡布鲁塞尔，1849年定居伦敦。在伦敦期间，马克思在大英博物馆进行了大量的研究工作，撰写了《资本论》等重要著作。</p>
+                            </div>
+                            
+                            <div class="author-card">
+                                <h4>弗里德里希·恩格斯</h4>
+                                <p>弗里德里希·恩格斯（Friedrich Engels，1820年11月28日－1895年8月5日），德国哲学家、经济学家、社会学家、历史学家、革命理论家。马克思主义的创始人之一，马克思的亲密战友。</p>
+                                <p>恩格斯出生于德国巴门的一个纺织工厂主家庭，早年曾在父亲的工厂工作，因此对工人阶级的生活状况有深刻的了解。1842年，恩格斯前往英国曼彻斯特，在父亲的工厂工作，同时深入研究英国工人阶级状况。1844年，恩格斯在巴黎与马克思相识，两人开始了长达40年的合作。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="writing-process">
+                        <h3>写作过程</h3>
+                        <p>1847年6月，共产主义者同盟在伦敦召开第一次代表大会，决定起草一个纲领。同年11月，同盟召开第二次代表大会，委托马克思和恩格斯起草纲领。马克思和恩格斯在讨论的基础上，由马克思执笔写成了《共产党宣言》。</p>
+                        <p>宣言于1848年2月在伦敦以德文出版，随即被翻译成多种欧洲语言。宣言的发表标志着马克思主义的正式诞生，为国际共产主义运动提供了科学的理论指导和行动纲领。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 核心内容 -->
+        <section id="core" class="section">
+            <div class="container">
+                <h2 class="section-title">核心结构内容和观点</h2>
+                
+                <div class="core-content">
+                    <div class="structure-intro">
+                        <h3>文本结构</h3>
+                        <p class="lead">
+                            《共产党宣言》由引言和四章正文组成，系统阐述了马克思主义的基本原理。引言说明了宣言的目的和任务；第一章分析了阶级斗争的历史作用；第二章阐述了无产阶级政党的理论；第三章批判了各种社会主义流派；第四章提出了无产阶级革命的策略原则。
+                        </p>
+                    </div>
+                    
+                    <div class="chapter-cards">
+                        <div class="chapter-card">
+                            <div class="chapter-header">
+                                <span class="chapter-num">引言</span>
+                                <h4>共产主义者同盟</h4>
+                            </div>
+                            <p>说明了写作《共产党宣言》的目的，回应了当时欧洲反动势力对共产主义的攻击和污蔑，阐述了共产党人的立场和目标。</p>
+                        </div>
+                        
+                        <div class="chapter-card">
+                            <div class="chapter-header">
+                                <span class="chapter-num">第一章</span>
+                                <h4>资产者和无产者</h4>
+                            </div>
+                            <p>运用历史唯物主义观点，分析了阶级斗争在社会历史发展中的作用，揭示了资产阶级和无产阶级的产生、发展及其相互斗争的过程，论证了资本主义必然灭亡和社会主义必然胜利的客观规律。</p>
+                        </div>
+                        
+                        <div class="chapter-card">
+                            <div class="chapter-header">
+                                <span class="chapter-num">第二章</span>
+                                <h4>无产者和共产党人</h4>
+                            </div>
+                            <p>阐述了共产党的性质、特点和基本纲领，指出共产党代表整个无产阶级的利益，强调无产阶级革命必须建立自己的政党，通过革命斗争夺取政权，建立无产阶级专政。</p>
+                        </div>
+                        
+                        <div class="chapter-card">
+                            <div class="chapter-header">
+                                <span class="chapter-num">第三章</span>
+                                <h4>社会主义的和共产主义的文献</h4>
+                            </div>
+                            <p>批判了当时流行的各种非科学的社会主义流派，包括封建的社会主义、小资产阶级的社会主义、德国的或"真正的"社会主义、保守的或资产阶级的社会主义、批判的空想的社会主义和共产主义。</p>
+                        </div>
+                        
+                        <div class="chapter-card">
+                            <div class="chapter-header">
+                                <span class="chapter-num">第四章</span>
+                                <h4>共产党人对各种反对党派的态度</h4>
+                            </div>
+                            <p>阐述了共产党人对各种反对党派的态度和策略原则，强调共产党人支持一切反对现存社会制度和政治制度的革命运动，同时强调无产阶级国际主义，号召全世界无产者联合起来。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="core-views">
+                        <h3>核心观点</h3>
+                        <div class="views-grid">
+                            <div class="view-item">
+                                <h4>阶级斗争理论</h4>
+                                <p>至今一切社会的历史都是阶级斗争的历史。阶级斗争是阶级社会发展的直接动力，是推动社会变革的根本力量。</p>
+                            </div>
+                            
+                            <div class="view-item">
+                                <h4>两个必然</h4>
+                                <p>资产阶级的灭亡和无产阶级的胜利是同样不可避免的。资本主义必然被社会主义所取代，这是不以人的意志为转移的客观规律。</p>
+                            </div>
+                            
+                            <div class="view-item">
+                                <h4>无产阶级历史使命</h4>
+                                <p>无产阶级是最革命的阶级，肩负着推翻资本主义制度、建立社会主义和共产主义社会的历史使命。</p>
+                            </div>
+                            
+                            <div class="view-item">
+                                <h4>无产阶级专政</h4>
+                                <p>无产阶级必须通过革命斗争夺取政权，建立无产阶级专政，这是通向共产主义的必由之路。</p>
+                            </div>
+                            
+                            <div class="view-item">
+                                <h4>消灭私有制</h4>
+                                <p>共产党人可以把自己的理论概括为一句话：消灭私有制。只有消灭生产资料私有制，建立公有制，才能消除剥削和压迫。</p>
+                            </div>
+                            
+                            <div class="view-item">
+                                <h4>国际主义精神</h4>
+                                <p>无产阶级的解放是国际性的事业，各国无产阶级必须联合起来，共同反对国际资产阶级。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="famous-quotes">
+                        <h3>经典名言</h3>
+                        <div class="quotes-list">
+                            <blockquote>
+                                <p>"一个幽灵，共产主义的幽灵，在欧洲游荡。"</p>
+                            </blockquote>
+                            <blockquote>
+                                <p>"无产者在这个革命中失去的只是锁链。他们获得的将是整个世界。"</p>
+                            </blockquote>
+                            <blockquote>
+                                <p>"全世界无产者，联合起来！"</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 历史意义 -->
+        <section id="significance" class="section">
+            <div class="container">
+                <h2 class="section-title">历史意义</h2>
+                
+                <div class="significance-content">
+                    <div class="significance-intro">
+                        <h3>深远的历史影响</h3>
+                        <p class="lead">
+                            《共产党宣言》发表至今已有170多年，但它的思想依然闪耀着真理的光芒。作为马克思主义诞生的标志，宣言对世界历史进程产生了深远而持久的影响，改变了人类社会的面貌。
+                        </p>
+                    </div>
+                    
+                    <div class="significance-grid">
+                        <div class="significance-item">
+                            <div class="significance-icon">📚</div>
+                            <h4>理论创新</h4>
+                            <p>宣言第一次系统阐述了科学社会主义理论，创立了马克思主义，为无产阶级提供了科学的世界观和方法论，使社会主义从空想变为科学。</p>
+                        </div>
+                        
+                        <div class="significance-item">
+                            <div class="significance-icon">🌍</div>
+                            <h4>国际影响</h4>
+                            <p>宣言被翻译成200多种语言，传遍全世界，成为国际共产主义运动的纲领性文件，推动了全球范围内的无产阶级革命运动。</p>
+                        </div>
+                        
+                        <div class="significance-item">
+                            <div class="significance-icon">⚡</div>
+                            <h4>革命实践</h4>
+                            <p>宣言直接推动了1848年欧洲革命、1871年巴黎公社、1917年俄国十月革命等重大历史事件，改变了世界政治格局。</p>
+                        </div>
+                        
+                        <div class="significance-item">
+                            <div class="significance-icon">🏛️</div>
+                            <h4>社会变革</h4>
+                            <p>宣言影响了20世纪世界格局的形成，社会主义国家相继建立，推动了殖民地半殖民地人民的民族解放运动。</p>
+                        </div>
+                        
+                        <div class="significance-item">
+                            <div class="significance-icon">💡</div>
+                            <h4>思想启蒙</h4>
+                            <p>宣言传播了科学社会主义思想，唤醒了全世界无产阶级的阶级意识，推动了工人运动的发展。</p>
+                        </div>
+                        
+                        <div class="significance-item">
+                            <div class="significance-icon">🔮</div>
+                            <h4>当代价值</h4>
+                            <p>宣言所揭示的社会发展规律、对资本主义的批判、对公平正义的追求，对当代社会仍具有重要的启示意义。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="modern-significance">
+                        <h3>当代启示</h3>
+                        <div class="modern-content">
+                            <div class="modern-item">
+                                <h4>坚持真理</h4>
+                                <p>宣言教导我们要坚持真理，运用科学的世界观和方法论认识世界、改造世界，不断推进理论创新和实践创新。</p>
+                            </div>
+                            
+                            <div class="modern-item">
+                                <h4>人民立场</h4>
+                                <p>宣言始终站在人民立场上，关注人的解放和全面发展，这一价值追求在当代仍然具有重要意义。</p>
+                            </div>
+                            
+                            <div class="modern-item">
+                                <h4>批判精神</h4>
+                                <p>宣言体现了马克思主义的批判精神，要求我们敢于直面问题，勇于自我革命，不断推进社会进步。</p>
+                            </div>
+                            
+                            <div class="modern-item">
+                                <h4>国际视野</h4>
+                                <p>宣言倡导的国际主义精神，对于应对全球性挑战、构建人类命运共同体具有重要的启示意义。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="closing">
+                        <p>
+                            《共产党宣言》不仅是一部伟大的政治文献，更是一部深刻的哲学著作。它所蕴含的思想永远不会过时，将继续激励着一代又一代人为实现人类的解放和幸福而奋斗。正如马克思和恩格斯在宣言中所预言的那样，共产主义的幽灵依然在世界各地游荡，人类对美好社会的追求永不止息。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>《共产党宣言》官网 | 纪念马克思主义诞生</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
